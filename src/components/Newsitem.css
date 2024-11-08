@@ -1,0 +1,17 @@
+/* Style for the card hover effect */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid transparent; /* Initial border color */
+  }
+  
+  .card:hover {
+    transform: scale(1.1) translateZ(30px); /* Zoom in and move forward */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(8, 125, 235, 0.8); /* Shadow with glowing white light */
+    border: 2px solid rgba(8, 125, 235, 0.8); /* White glowing border */
+  }
+  
+  /* Optional: Increase the shadow intensity for a more dramatic effect */
+  .card:hover .card-body {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(8, 125, 235, 0.8); /* Light shadow on card content */
+  }
+  

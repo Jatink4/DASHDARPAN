@@ -1,0 +1,49 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Navbar item animation */
+  .nav-item {
+    opacity: 0; /* Initially invisible */
+    animation: fadeInUp 1s forwards;
+  }
+  
+  /* Add a delay for each nav-item to appear sequentially */
+  .nav-item:nth-child(1) {
+    animation-delay: 0.2s; /* Home */
+  }
+  
+  .nav-item:nth-child(2) {
+    animation-delay: 0.4s; /* About */
+  }
+  
+  .nav-item:nth-child(3) {
+    animation-delay: 0.6s; /* Services */
+  }
+  
+  .nav-item:nth-child(4) {
+    animation-delay: 0.8s; /* Contact */
+  }
+  .nav-item:nth-child(5) {
+    animation-delay: 1.0s; /* Home */
+  }
+  
+  .nav-item:nth-child(6) {
+    animation-delay: 1.2s; /* About */
+  }
+  
+  .nav-item:nth-child(7) {
+    animation-delay: 1.4s; /* Services */
+  }
+  .nav-link:hover {
+    color: #00aced;
+    transform: translateY(-3px); 
+  }
+  
